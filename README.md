@@ -1,2 +1,1 @@
-# Cpp-C-
-This repo contains C++ Code
+Cpp-Assignments-Quizzes-and-Tasks
