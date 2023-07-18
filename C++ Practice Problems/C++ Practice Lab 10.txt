@@ -1,0 +1,161 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int i=1;
+	do
+	{
+		cout<<i<<" ";
+		i++;
+	}
+	while(i<=10);
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int i=1,sum=0,n;
+	cout<<"Enter a number : ";
+	cin>>n;
+	do
+	{
+		cout<<i<<" ";
+		sum=sum+i;
+		i++;
+	}
+	while(i<=n);
+	cout<<endl<<"Sum = "<<sum<<endl;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int i=1,sum=0;
+	do
+	{
+		cout<<i<<" ";
+		i++;
+	}
+	while(i<=10);
+	cout<<endl<<"Sum = "<<sum<<endl;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int i=1,sum=0;
+	do
+	{
+		cout<<i<<" ";
+		sum=sum+i;
+		i++;
+	}
+	while(i<=10);
+	cout<<endl<<"Sum = "<<sum<<endl;
+	cout<<"AVG = "<<sum/10<<endl;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int i=1,n,a;
+	cout<<"Enter a number : ";
+	cin>>n;
+	do
+	{
+		a=n*n*n;
+		i++;
+	}
+	while(i<=n);
+	cout<<endl<<"Cube of given number = "<<a<<endl;
+}
+  
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int i=1,n,a;
+	cout<<"Enter a number : ";
+	cin>>n;
+	do
+	{
+		cout<<n<<" * "<<i<<" = "<<n*i<<endl;
+		i++;
+	}
+	while(i<=10);
+	
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int i=1,n,sum=0;
+	cout<<"Enter a number : ";
+	cin>>n;
+	do
+	{
+		if(i%2!=0)
+		{
+			cout<<i<<" ";
+			sum=sum+i;
+		}
+	i++;
+	}
+	while(i<=n);
+	cout<<endl<<"Sum of odd number till given series is = "<<sum<<endl;
+	
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int i=1,n,a=1,c=1;
+	cout<<"Enter a number : ";
+	cin>>n;
+	do
+	{
+		c=1;
+		do
+		{
+			cout<<a<<" * "<<c<<" = "<<a*c<<" , ";
+			c++;
+		}
+		while(c<=10);
+	cout<<endl;
+	a++;
+	i++;
+	}
+	while(i<=n);
+}
+  
+
+

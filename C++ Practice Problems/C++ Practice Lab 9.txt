@@ -1,0 +1,344 @@
+class
+
+#include <iostream>
+using namespace std;
+void A(int&,int&);
+int main() 
+{
+	int a,b;
+	a=10;
+	b=20;
+	cout<<"In Main"<<endl<<"a = "<<a;
+	cout<<"b = "<<b;
+	A(a,b);
+	cout<<"a = "<<a;
+	cout<<"b = "<<b;
+	
+	return 0;
+}
+
+void A(int&a,int&b)
+{
+	cout<<endl<<"In Function"<<endl;
+	a=a*10;
+	b=b*5;
+}
+
+
+1111111111
+
+
+#include<iostream>
+using namespace std;
+int A(int);
+int main()
+{
+	int a,b,c,d,e;
+	cout<<"Enter a Number Between 1 to 20 : "<<endl;
+	cout<<"Enter the 1st number : ";
+	cin>>a;
+	cout<<"Enter the 2nd number : ";
+	cin>>b;
+	cout<<"Enter the 3rd number : ";
+	cin>>c;
+	cout<<"Enter the 4th number : ";
+	cin>>d;
+	cout<<"Enter the 5th number : ";
+	cin>>e;
+	A(a);
+	A(b);
+	A(c);
+	A(d);
+	A(e);
+	
+	return 0;
+}
+
+
+int A(int x)
+{
+	for(int i=1;i<=x;i++)
+	{
+		cout<<"#";
+	}
+	cout<<endl;
+}
+
+222222222
+
+#include <iostream>
+using namespace std;
+void A();
+int main() 
+{
+	for(int i=1;i<=5;i++)
+	A();
+	
+	return 0;
+}
+
+void A()
+{
+	cout<<"*****"<<endl;
+}
+
+
+
+3333333333333
+
+
+#include <iostream>
+using namespace std;
+void A(int,int);
+int main() 
+{
+	int a,b;
+	cout<<"Enter 1st Number : ";
+	cin>>a;
+	cout<<"Enter 2nd Number : ";
+	cin>>b;
+	A(a,b);
+	
+	return 0;
+}
+
+void A(int x,int y)
+{
+	for(int i=x;i<=y;i++)
+	cout<<'*';
+}
+
+
+
+44444444444444
+
+
+#include <iostream>
+using namespace std;
+void A(int,int,int,int,int);
+int main() 
+{
+	int a,b,c,d,e;
+	cout<<"Enter 1st Number : ";
+	cin>>a;
+	cout<<"Enter 2nd Number : ";
+	cin>>b;
+	cout<<"Enter 3rd Number : ";
+	cin>>c;
+	cout<<"Enter 4th Number : ";
+	cin>>d;
+	cout<<"Enter 5th Number : ";
+	cin>>e;
+	A(a,b,c,d,e);
+	
+	return 0;
+}
+
+void A(int v,int w,int x, int y, int z)
+{
+	int sum;
+	sum=v+w+x+y+z;
+	cout<<sum;
+	
+}
+
+
+55555555
+
+
+#include <iostream>
+using namespace std;
+void A(int,int);
+int main() 
+{
+	int a,b;
+	cout<<"Enter 1st Number : ";
+	cin>>a;
+	cout<<"Enter 2nd Number : ";
+	cin>>b;
+
+	A(a,b);
+	
+	return 0;
+}
+
+void A(int x, int y)
+{
+	(x>y?(cout<<"1st Number is Greatest"):cout<<"2nd Number is Greatest");
+	
+}
+
+
+
+
+666666666666
+
+
+
+#include <iostream>
+using namespace std;
+void fact(int);
+int main() 
+{
+	int a;
+	cout<<"Enter a Number : ";
+	cin>>a;
+
+	fact(a);
+	
+	return 0;
+}
+
+void fact(int x)
+{
+	int i,f=1;
+	for(i=1;i<=x;i++)
+	f=f*i;
+	cout<<"Factorial of given number : "<<f;
+	
+}
+
+
+
+77777777777777
+
+
+#include <iostream>
+using namespace std;
+float A();
+int main() 
+{
+	float Area=A();
+	cout<<"Area of Circle : "<<Area;
+	
+	return 0;
+}
+
+float A()
+{
+	int r;
+	cout<<"Enter the radius : ";
+	cin>>r;
+	float a=3.14*r*r;
+	return a;
+	
+	
+}
+
+
+
+88888888888
+
+
+#include <iostream>
+using namespace std;
+void A(int&,int&);
+int main() 
+{
+	int a,b;
+	cout<<"Enter 1st number : ";
+	cin>>a;
+	cout<<"Enter 2nd number : ";
+	cin>>b;
+	cout<<"Before swap : "<<"a = "<<a<<" "<<"b = "<<b<<endl;
+	A(a,b);
+	cout<<"After swap : "<<"a = "<<a<<" "<<"b = "<<b<<endl;
+	return 0;
+}
+
+void A(int&x,int&y)
+{
+	int temp;
+	temp=x;
+	x=y;
+	y=temp;
+	
+}
+
+
+
+99999999999999
+
+
+#include <iostream>
+using namespace std;
+void A(int ,int ,char);
+int main() 
+{
+	int a,b;
+	char op;
+	cout<<"Enter 1st number : ";
+	cin>>a;
+	cout<<"Enter 2nd number : ";
+	cin>>b;
+	cout<<endl<<"Enter option as symbol : ";
+	cin>>op;
+	
+	A(a,b,op);
+	
+	return 0;
+}
+
+void A(int x,int y,char op)
+{
+	switch(op)
+	{
+		case '+':
+			cout<<"Sum of Given number = "<<x+y;
+			break;
+		case '-':
+			cout<<"Subtraction of Given number = "<<x-y;
+			break;
+		case '*':
+			cout<<"Multiplication of Given number = "<<x*y;
+			break;
+		case '/':
+			cout<<"Division of Given number = "<<x/y;
+			break;
+		case '%':
+			cout<<"Modolus of Given number = "<<x%y;
+			break;
+	}
+	
+}
+
+
+
+
+
+101010101010
+
+
+#include <iostream>
+using namespace std;
+int A(int ,int ,int,int,int);
+int main() 
+{
+	int a,b,c,d,e;
+	cout<<"Enter 1st number : ";
+	cin>>a;
+	cout<<endl<<"Enter 2nd number : ";
+	cin>>b;
+	cout<<endl<<"Enter 3rd number : ";
+	cin>>c;
+	cout<<endl<<"Enter 4th number : ";
+	cin>>d;
+	cout<<endl<<"Enter 5th number : ";
+	cin>>e;
+	
+	int sum=A(a,b,c,d,e);
+	float avg=sum/5;
+	cout<<endl<<"Avg = "<<avg;
+	
+	return 0;
+}
+
+int A(int v,int w,int x,int y,int z)
+{
+	int sum=v+w+x+y+z;
+	cout<<endl<<"Sum = "<<sum<<endl;
+	return sum;
+	
+}
+
+

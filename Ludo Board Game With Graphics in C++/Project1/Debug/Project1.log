@@ -1,0 +1,57 @@
+﻿  Source.cpp
+D:\FYP\LUDO - Copy\Project1\Source.cpp(237,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(237,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(245,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(245,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(261,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(261,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(269,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(269,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(286,41): warning C4305: 'argument': truncation from 'double' to 'T'
+D:\FYP\LUDO - Copy\Project1\Source.cpp(286,41): warning C4305:         with
+D:\FYP\LUDO - Copy\Project1\Source.cpp(286,41): warning C4305:         [
+D:\FYP\LUDO - Copy\Project1\Source.cpp(286,41): warning C4305:             T=float
+D:\FYP\LUDO - Copy\Project1\Source.cpp(286,41): warning C4305:         ]
+D:\FYP\LUDO - Copy\Project1\Source.cpp(287,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(287,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(294,41): warning C4305: 'argument': truncation from 'double' to 'T'
+D:\FYP\LUDO - Copy\Project1\Source.cpp(294,41): warning C4305:         with
+D:\FYP\LUDO - Copy\Project1\Source.cpp(294,41): warning C4305:         [
+D:\FYP\LUDO - Copy\Project1\Source.cpp(294,41): warning C4305:             T=float
+D:\FYP\LUDO - Copy\Project1\Source.cpp(294,41): warning C4305:         ]
+D:\FYP\LUDO - Copy\Project1\Source.cpp(295,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(295,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(310,41): warning C4305: 'argument': truncation from 'double' to 'T'
+D:\FYP\LUDO - Copy\Project1\Source.cpp(310,41): warning C4305:         with
+D:\FYP\LUDO - Copy\Project1\Source.cpp(310,41): warning C4305:         [
+D:\FYP\LUDO - Copy\Project1\Source.cpp(310,41): warning C4305:             T=float
+D:\FYP\LUDO - Copy\Project1\Source.cpp(310,41): warning C4305:         ]
+D:\FYP\LUDO - Copy\Project1\Source.cpp(311,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(311,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(318,41): warning C4305: 'argument': truncation from 'double' to 'T'
+D:\FYP\LUDO - Copy\Project1\Source.cpp(318,41): warning C4305:         with
+D:\FYP\LUDO - Copy\Project1\Source.cpp(318,41): warning C4305:         [
+D:\FYP\LUDO - Copy\Project1\Source.cpp(318,41): warning C4305:             T=float
+D:\FYP\LUDO - Copy\Project1\Source.cpp(318,41): warning C4305:         ]
+D:\FYP\LUDO - Copy\Project1\Source.cpp(319,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(319,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,107): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,107): warning C4244:         with
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,107): warning C4244:         [
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,107): warning C4244:             T=int
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,107): warning C4244:         ]
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,107): warning C4244:         and
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,107): warning C4244:         [
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,107): warning C4244:             T=float
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,107): warning C4244:         ]
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,77): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,77): warning C4244:         with
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,77): warning C4244:         [
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,77): warning C4244:             T=int
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,77): warning C4244:         ]
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,77): warning C4244:         and
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,77): warning C4244:         [
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,77): warning C4244:             T=float
+D:\FYP\LUDO - Copy\Project1\Source.cpp(421,77): warning C4244:         ]
+D:\FYP\LUDO - Copy\Project1\Source.cpp(423,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Project1.vcxproj -> D:\FYP\LUDO - Copy\Project1\Debug\Project1.exe

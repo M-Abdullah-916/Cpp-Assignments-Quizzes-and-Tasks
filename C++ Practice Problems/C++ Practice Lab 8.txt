@@ -1,0 +1,286 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+void factorial();
+void even_odd();
+void prime();
+
+int main() 
+{
+	int opt;
+	cout<<"For Factorial of the given number                     : Enter 1"<<endl;
+	cout<<"For checking of even or odd number                    : Enter 2"<<endl;
+	cout<<"For checking whether the given number is prime or not : Enter 3"<<endl;
+	cout<<"***********************************************************************"<<endl;
+	cout<<"Enter your option : ";
+	cin>>opt;
+	cout<<"***********************************************************************"<<endl;
+	
+	if(opt==1)
+	{
+		factorial();
+	}
+	
+	else if(opt==2)
+	{
+		even_odd();
+	}
+	
+	else if(opt==3)
+	{
+		prime();
+	}
+	else
+	cout<<"Invalid Entery"<<endl;
+	
+	
+	return 0;
+}
+
+
+void factorial()
+{
+	int i,n,f=1;
+	cout<<"Enter a number : ";
+	cin>>n;
+	
+	for(i=1;i<=n;i++)
+	{
+		f=f*i;
+	}
+	cout<<"Factorial of the given number = "<<f<<endl;
+}
+
+void even_odd()
+{
+	int n;
+	cout<<"Enter a number : ";
+	cin>>n;
+	if(n%2==0)
+	{
+		cout<<"Entered number is an even number "<<endl;
+	}
+	else cout<<"Entered number is an odd number "<<endl;
+}
+
+void prime()
+{
+	int i,n;
+	cout<<"Enter a number : ";
+	cin>>n;
+	
+	for(i=2;i<n;i++)
+	{
+		if(n%i==0)
+		{
+			cout<<"Given number is not a prime number "<<endl;
+		    break;
+		}
+    }
+   	if(i==n)
+    cout<<"Given number is a prime number "<<endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+void factorial(int);
+void even_odd(int);
+void prime(int);
+
+int main() 
+{
+	int opt,n;
+	cout<<"For Factorial of the given number                     : Enter 1"<<endl;
+	cout<<"For checking of even or odd number                    : Enter 2"<<endl;
+	cout<<"For checking whether the given number is prime or not : Enter 3"<<endl;
+	cout<<"***********************************************************************"<<endl;
+	cout<<"Enter your option : ";
+	cin>>opt;
+	cout<<"***********************************************************************"<<endl;
+	
+	cout<<"Enter a number : ";
+	cin>>n;
+	if(opt==1)
+	{
+		factorial(n);
+	}
+	
+	else if(opt==2)
+	{
+		even_odd(n);
+	}
+	
+	else if(opt==3)
+	{
+		prime(n);
+	}
+	else
+	cout<<"Invalid Entery"<<endl;
+	
+	
+	return 0;
+}
+
+
+void factorial(int x)
+{
+	int i,f=1;
+	
+	for(i=1;i<=x;i++)
+	{
+		f=f*i;
+	}
+	cout<<"Factorial of the given number = "<<f<<endl;
+}
+
+void even_odd(int x)
+{
+	if(x%2==0)
+	{
+		cout<<"Entered number is an even number "<<endl;
+	}
+	else cout<<"Entered number is an odd number "<<endl;
+}
+
+void prime(int x)
+{
+	int i;
+	
+	for(i=2;i<x;i++)
+	{
+		if(x%i==0)
+		{
+			cout<<"Given number is not a prime number "<<endl;
+		    break;
+		}
+    }
+   	if(i==x)
+    cout<<"Given number is a prime number "<<endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int factorial(int);
+int even_odd(int);
+int prime(int);
+
+int main() 
+{
+	int opt,n;
+	cout<<"For Factorial of the given number                     : Enter 1"<<endl;
+	cout<<"For checking of even or odd number                    : Enter 2"<<endl;
+	cout<<"For checking whether the given number is prime or not : Enter 3"<<endl;
+	cout<<"***********************************************************************"<<endl;
+	cout<<"Enter your option : ";
+	cin>>opt;
+	cout<<"***********************************************************************"<<endl;
+	
+	cout<<"Enter a number : ";
+	cin>>n;
+	if(opt==1)
+	{
+	int abc=factorial(n);
+	cout<<"Factorial of given number = "<<abc;
+	
+	}
+	
+	else if(opt==2)
+	{
+	int abc=even_odd(n);
+	if(abc==true)
+	cout<<"EVEN NUMBER";
+	else
+	cout<<"ODD NUMBER";
+	}
+	
+	else if(opt==3)
+	{
+	int abc=prime(n);
+	if(abc==true)
+	cout<<"It is a prime number";
+	}
+	else
+	cout<<"Invalid Entery"<<endl;
+	
+	
+	return 0;
+}
+
+
+int factorial(int x)
+{
+	int i,f=1;
+	
+	for(i=1;i<=x;i++)
+	{
+		f=f*i;
+	}
+	return f;
+}
+
+int even_odd(int x)
+{
+	if(x%2==0)
+	{
+		return true;
+	}
+	
+}
+
+int prime(int x)
+{
+	int i;
+	
+	for(i=2;i<x;i++)
+	{
+		if(x%i==0)
+		{
+			cout<<"Given number is not a prime number "<<endl;
+		    break;
+		}
+    }
+   	if(i==x)
+    return true;
+}
+
+
+
+
+
+

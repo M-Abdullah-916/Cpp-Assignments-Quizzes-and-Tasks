@@ -1,0 +1,141 @@
+Q1.
+#include<iostream>
+using namespace std;
+int sequence(int);
+
+int main()
+{
+	int n,answere;
+	cout << "Enter the Nth Term : ";
+	cin >> n;
+	sequence(n);
+	cout << endl;
+
+	system("pause");
+	return 0;
+}
+
+int sequence(int n)
+{
+	int term;
+	for (int i = 1; i <= n; i++)
+	{
+		term = (i * ((i / 2) + ((i % 2) * 2) + i));
+
+		cout << term << " " ;
+	}
+	return 0;
+	
+}
+________________________________________
+Q2.
+#include<iostream>
+using namespace std;
+int sequence(int);
+
+int main()
+{
+	int p11, p12, p21, p22, p31, p32, p41, p42;
+	cout << "Enter first point  : ";
+	cin >> p11 >> p12;
+	cout << "Enter second point : ";
+	cin >> p21 >> p22;
+	cout << "Enter third point  : ";
+	cin >> p31 >> p32;
+	cout << "Enter fourth point : ";
+	cin >> p41 >> p42;
+
+	system("pause");
+	return 0;
+}
+
+
+int sequence(int n)
+{
+
+}
+
+________________________________________
+Q4.
+#include<iostream>
+using namespace std;
+int sequence(int);
+
+int main()
+{
+	int n;
+	cout << "Enter number : ";
+	cin >> n;
+	sequence(n);
+	cout << endl;
+	system("pause");
+	return 0;
+}
+
+
+int sequence(int n)
+{
+	int factorial = 1;
+
+	if (n == 0)
+	{
+		cout << "Factorial = 1";
+	}
+    
+	else
+	{
+		for (int i = 1; i <= n; i++)
+		{
+			factorial = factorial * i;
+		}
+		cout << "Factorial = " << factorial;
+	}
+	return 0;
+}
+________________________________________
+Q5.
+#include<iostream>
+using namespace std;
+int larger(int,int);
+
+int main()
+{
+	int num1, num2;
+
+	cout << "Enter number : ";
+	cin >> num1;
+	cout << "Enter number : ";
+	cin >> num2;
+	larger(num1,num2);
+	cout << endl;
+	system("pause");
+	return 0;
+}
+int larger(int num1, int num2)
+{
+	int max;
+	if (num1 > num2)
+	{
+		max = num1;
+	}
+	else
+	{
+		max = num2;
+	}
+	for (int i = 1; i <= 8; i++)
+	{
+		cout << "Enter number : ";
+		cin >> num2;
+		if (max > num2)
+	{
+		max = max;
+	}
+	else
+	{
+		max = num2;
+	}
+	}
+	cout << "Largest Number = " << max;
+	return 0;
+}
+

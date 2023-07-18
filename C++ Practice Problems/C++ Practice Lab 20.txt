@@ -1,0 +1,364 @@
+11111111111111111111111111111
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int max=0;
+	int a[5][5]={
+		         {4,5,11,16,5},
+		         {8,3,19,75,39},
+		         {14,34,87,11,9},
+		         {11,4,9,64,13},
+		         {16,43,8,24,11},
+	            };
+	            
+	for(int i=0;i<5;i++)
+	{
+	 	for(int j=0;j<5;j++)
+	 	{
+	 		if(max<a[i][j])
+	 		max=a[i][j];
+	 		else
+	 		max=max;
+	    }
+	} 
+	           
+	for(int i=0;i<5;i++)
+	{
+	 	for(int j=0;j<5;j++)
+	 	{
+	 		cout<<a[i][j]<<" ";
+	    }
+	    cout<<endl;
+	}
+	cout<<endl<<"Maximum number from given array = "<<max;
+	
+	
+	return 0;
+}
+
+2222222222222222222222
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int size1=0,size2=0,val,c1=1,c2=1;
+	cout<<"Enter number of rows = ";
+	cin>>size1;
+	cout<<"Enter number of coloumns = ";
+	cin>>size2;
+	int a[size1][size2]={0};        
+	cout<<endl;
+	
+	if(size1==size2)
+	{
+		for(int i=0;i<size1;i++)
+	{
+	 	for(int j=0;j<size2;j++)
+	 	{
+	 		cout<<"Enter the value for "<<c1<<" row and "<<c2<<" coloumn : ";
+	 		cin>>a[i][j];
+	 		c2++;
+	    }
+	    c2=1;
+	    c1++;
+	    cout<<endl;
+	}    
+		cout<<"It is a sqaure matrix and its diagonals are :"<<endl;
+		for(int i=0,j=0;i<size1,j<size2;i++,j++)
+	    {
+	    	cout<<a[i][j]<<" ";
+	 	 
+	    } 
+	}
+	else
+	cout<<"It is not a square matrix";
+	cout<<endl<<endl;
+	           
+	for(int i=0;i<size1;i++)
+	{
+	 	for(int j=0;j<size2;j++)
+	 	{
+	 		cout<<a[i][j]<<" ";
+	    }
+	    cout<<endl;
+	}
+	
+	
+	return 0;
+}
+
+
+33333333333333333
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int A[10][10]={0};
+	int row,col,a,temp;
+	
+	cout<<"Enter Number Of Rows (less than 10 only) : ";
+	cin>>row;
+	cout<<"Enter Number Of columns (less than 10 only) : ";
+	cin>>col;
+	cout<<endl;
+	
+	for(int i=0;i<row;i++)
+	{
+		for(int j=0;j<col;j++)
+		{
+			cout<<"Enter the value for "<<i+1<<" row and "<<j+1<<" coloumn : ";
+			cin>>a;
+			A[i][j]=a;
+		}
+		cout<<endl;
+    }
+    temp=row;
+    row=col;
+    col=temp;
+	
+    for (int i = 0; i<row; i++)
+    {
+    	for (int j = 0; j<col; j++)
+        {
+         cout<<"\t"<<A[j][i]<<" ";
+	    }
+	    cout<<endl;
+	}
+    
+   
+	
+	return 0;
+}
+
+
+444444444444444444444
+
+
+#include <iostream>
+using namespace std;
+void A1(int a[][3]);
+void A2(int a[][3],int b[]);
+void A3(int b[]);
+
+int main() 
+{
+	int a[3][3]={0};
+	int b[9]={0};
+	
+	A1(a);
+	A2(a,b);
+	A3(b);
+	
+	
+	return 0;
+}
+void A1(int a[][3])
+{
+	for(int i=0;i<3;i++)
+	{
+	 	for(int j=0;j<3;j++)
+	 	{
+	 		cout<<"Enter the value for "<<i+1<<" row and "<<j+1<<" coloumn : ";
+	 		cin>>a[i][j];
+	    }
+	    cout<<endl;
+}
+}
+void A2(int a[][3],int b[9])
+{
+	int c=0;
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			b[c]=a[i][j];
+			c++;
+		}
+	}
+}
+void A3(int b[9])
+{
+	cout<<"1D array values are : ";
+	for(int i=0;i<9;i++)
+	cout<<b[i]<<" ";
+}
+
+
+55555555555555555555555
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int A[10][10]={0};
+	int B[10][10]={0};
+	int C[10][10]={0};
+	int a,size;
+	cout<<"Enter size of matrix : ";
+	cin>>size;
+	
+	cout<<"ENTER VALUES FOR 1st MATRIX"<<endl;
+	for(int i=0;i<size;i++)
+	{
+		for(int j=0;j<size;j++)
+		{
+			cout<<"Enter the value for "<<i+1<<" row and "<<j+1<<" coloumn : ";
+			cin>>a;
+			A[i][j]=a;
+		}
+		cout<<endl;
+	}
+	
+	cout<<"ENTER VALUESFOR 2st MATRIX"<<endl;
+	
+	for(int i=0;i<size;i++)
+	{
+		for(int j=0;j<size;j++)
+		{
+			cout<<"Enter the value for "<<i+1<<" row and "<<j+1<<" coloumn : ";
+			cin>>a;
+			B[i][j]=a;
+		}
+		cout<<endl;
+	}
+	
+	for(int i=0;i<size;i++)
+	{
+		for(int j=0;j<size;j++)
+		{
+			C[i][j]=A[i][j] * B[i][j];
+		}
+		cout<<endl;
+	}
+	
+	cout<<"\tAfter multiplaying matrix 1 with 2 we got "<<endl;
+    for (int i = 0; i<size; i++)
+    {
+    	for (int j = 0; j<size; j++)
+        {
+         cout<<"\t"<<C[i][j]<<" ";
+	    }
+	    cout<<endl;
+	}
+	
+
+   
+	
+	return 0;
+}
+
+
+
+
+666666666666666666666
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int A[5][5]={
+		          {1,2,3,4,5},
+		          {1,2,3,4,5},
+		          {1,2,3,4,5},
+		          {1,2,3,4,5},
+		          {1,2,3,4,5},
+				};
+	int temp[1][1]={0};
+	cout<<"Before the chagining the matrix formation : "<<endl;
+	for (int i = 0; i<5; i++)
+    {
+    	for (int j = 0; j<5; j++)
+        {
+         cout<<"\t"<<A[i][j]<<" ";
+	    }
+	    cout<<endl;
+	}
+    
+
+    for (int i = 0,j = 4; i<5,j>=0; i++,j--)
+    {
+    	temp[0][0]=A[i][i];
+    	A[i][i]=A[i][j];
+    	A[i][j]=temp[0][0];
+    	
+	}
+	cout<<"After changing the matrix formation : "<<endl;
+    for (int i = 0; i<5; i++)
+    {
+    	for (int j = 0; j<5; j++)
+        {
+         cout<<"\t"<<A[i][j]<<" ";
+	    }
+	    cout<<endl;
+	}
+    
+   
+	
+	return 0;
+}
+
+
+7777777777777777777777777777
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int a[250]={0};
+	int b[]={0};
+	int t=0,x=0,z=0;
+	cout<<"Enter the value of code : ";
+	for(int i=0;i<(a[0]*2)+1;i++)
+	{
+		cin>>a[i];
+		t++;
+	}
+	t=t-1;
+	x=t/2;
+	cout<<"Total number of digits entered = "<<t<<endl;
+	cout<<"By doing it half it becomes = "<<x<<endl;
+	for(int i=x;i<t;i++)
+	{
+		a[i]=b[i];
+	}
+    cout<<"Original code : ";
+    
+    for(int i=1;i<=x;i++)
+    cout<<a[i];
+    
+    for(int i=x+1;i<=t;i++)
+	{
+		if(b[i]=a[i])
+		z++;
+	}
+	
+	cout<<endl<<"Primary key : ";
+    for(int i=x+1;i<=t;i++)
+    cout<<b[i];
+    
+    cout<<endl;
+	if(z==x)
+	cout<<"Code is not corrupted";
+	else
+	cout<<"Code is corrupted";
+	
+	return 0;
+}
+
+
+888888888888888888888888888

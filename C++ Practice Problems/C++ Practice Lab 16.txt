@@ -1,0 +1,172 @@
+1111111
+
+#include <iostream>
+using namespace std;
+void swap(int&,int&);
+int main() 
+{
+	int a,b;
+	cout<<"Enter 1st number : ";
+	cin>>a;
+	cout<<"Enter 2nd number : ";
+	cin>>b;
+	cout<<"Before swap : "<<"a = "<<a<<" "<<"b = "<<b<<endl;
+	swap(a,b);
+	cout<<"After swap : "<<"a = "<<a<<" "<<"b = "<<b<<endl;
+	return 0;
+}
+
+void swap(int&x,int&y)
+{
+	int temp;
+	temp=x;
+	x=y;
+	y=temp;
+	
+}
+
+
+
+22222222
+
+
+
+#include <iostream>
+using namespace std;
+void line(double&,double&);
+
+int main() 
+{
+	int c;
+	double a,b;
+	cout<<"Enter the value of x0 : ";
+	cin>>a;
+	cout<<"Enter the value of y0 : ";
+	cin>>b;
+	c=2*a*b;
+	line(a,b);
+	cout<<b<<"x + "<<a<<"y = "<<c<<endl;
+
+	return 0;
+}
+void line(double&x,double&y)
+{
+	int temp;
+	temp=x;
+	x=y;
+	y=temp;
+	
+}
+
+
+
+33333333333333
+
+
+
+#include <iostream>
+using namespace std;
+double MaxDistance(int&,float);
+
+int main() 
+{
+	int n,f;
+	float ab;
+	cout<<"Enter the number of total bikes : ";
+	cin>>n;
+	cout<<"Enter amount of fuel : ";
+	cin>>f;
+	float i=MaxDistance(n,f);
+		
+	cout<<"Total Distance Travelled By All Bikes : "<<i;
+	
+}
+double MaxDistance(int&x,float y)
+{
+	float dis;
+	for(int i=1;i<=x;i++)
+	dis=dis+(y/i);
+	
+	return dis;	
+}
+
+
+
+
+
+
+
+
+
+44444444444444444
+
+
+
+#include <iostream>
+using namespace std;
+void A(int&,int&);
+int main() 
+{
+	int n,p,x;
+	cout<<"Enter the value for factorial : ";
+	cin>>n;
+	cout<<"Enter the value for prime number : ";
+	cin>>p;
+	A(n,p);
+	
+}
+void A(int&x,int&y)
+{
+	int f=1;
+	for(int i=1;i<=n;i++)
+	{
+		f=f*i;
+	}
+	for(int i=1;i<=1000;i++)
+	{
+		int a
+	}
+}
+
+
+
+5555555555555555555555
+
+#include <iostream>
+using namespace std;
+void A(int&,int&);
+
+int main() 
+
+{
+	int n,p,x;
+	cout<<"Enter the value for integer : ";
+	cin>>n;
+	cout<<"Enter the for prime number : ";
+	cin>>p;
+	A(n,p);
+	
+	return 0;
+}
+
+void A(int&x,int&y)
+
+{
+	int f=1;
+	for(int i=1;i<=x;i++)
+	f=f*i;
+	cout<<endl<<"Factorial of the given integer : "<<f<<endl;
+	
+	int i;
+	for(i=2;i<y;i++)
+	{
+		if (y%i==0)
+		{
+     		cout<<endl<<"Given number is not a prime number : "<<y<<endl;
+	      	break;
+		}	
+	}
+	if(y==i)
+	cout<<endl<<"Given number is a prime number : "<<y<<endl;
+}
+***************************************************

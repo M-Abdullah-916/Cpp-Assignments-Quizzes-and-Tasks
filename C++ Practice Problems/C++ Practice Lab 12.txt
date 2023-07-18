@@ -1,0 +1,818 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int a,b,c,n;
+	cout<<"Enter the 1st number : ";
+	cin>>a;
+	cout<<endl<<"Enter the 2nd number : ";
+	cin>>b;
+	cout<<endl<<"Enter the 3rd number : ";
+	cin>>c;
+	cout<<endl<<"Press 1 to start checking  ";
+	cin>>n;
+	switch(n)
+	{
+		case 1:
+			if (a>b && a>c)
+			cout<<endl<<"1st number is greater "<<a;
+			
+		case 2:
+			if (b>a && b>c)
+			cout<<endl<<"2nd number is greater "<<b;
+			
+		case 3:
+			if (c>a && c>b)
+			cout<<endl<<"3rd number is greater "<<c;
+			break;
+		default:
+			cout<<"Have a nice day";
+	}
+	
+	
+	return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int a,b,c,n,i;
+	cout<<"Enter a 3-digit number : ";
+	cin>>n;
+	cout<<endl;
+	c=n%10;
+	i=n/10;
+	b=i%10;
+	i=i/10;
+	a=i%10;
+	if((a*a*a)+(b*b*b)+(c*c*c)==n)
+	cout<<"Entered number is an armstrong number";
+	else
+	cout<<"Entered number is not an armstrong number";
+	
+
+
+	
+	return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int month,day,year;
+	cout<<"Enter your birth month by pressing 1-12 : ";
+	cin>>month;
+	cout<<endl<<"Enter your birth date  : ";
+	cin>>day;
+	cout<<endl<<"Enter your birth year  : ";
+	cin>>year;
+	cout<<endl;
+	if(day>=1 && day<=31)
+	{
+		if(month==1)
+	cout<<"JAN "<<day<<" "<<year;
+	else if(month==2)
+	cout<<"FEB "<<day<<" "<<year;
+	else if(month==3)
+	cout<<"MAR "<<day<<" "<<year;
+	else if(month==4)
+	cout<<"APR "<<day<<" "<<year;
+	else if(month==5)
+	cout<<"MAY "<<day<<" "<<year;
+	else if(month==6)
+	cout<<"JUNE "<<day<<" "<<year;
+	else if(month==7)
+	cout<<"JULY "<<day<<" "<<year;
+	else if(month==8)
+	cout<<"AUG "<<day<<" "<<year;
+	else if(month==9)
+	cout<<"SEP "<<day<<" "<<year;
+	else if(month==10)
+	cout<<"OCT "<<day<<" "<<year;
+	else if(month==11)
+	cout<<"NOV "<<day<<" "<<year;
+	else if(month==12)
+	cout<<"DEC "<<day<<" "<<year;
+	else
+	cout<<"Invalid Entry in Month";
+	}
+	else
+	cout<<"Wrong Input in Date";
+	
+	
+	return 0;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int month,day,year;
+	cout<<"Enter your birth month by pressing 1-12 : ";
+	cin>>month;
+	cout<<endl<<"Enter your birth date  : ";
+	cin>>day;
+	cout<<endl<<"Enter your birth year  : ";
+	cin>>year;
+	cout<<endl;
+	if(day>=1 && day<=31)
+	{
+			switch(month)
+	    {  
+		case 1:
+			cout<<"JAN "<<day<<" "<<year;
+			break;
+		case 2:
+			cout<<"FEB "<<day<<" "<<year;
+			break;
+		case 3:
+			cout<<"MAR "<<day<<" "<<year;
+			break;
+		case 4:
+			cout<<"APR "<<day<<" "<<year;
+			break;
+		case 5:
+			cout<<"MAY "<<day<<" "<<year;
+			break;
+		case 6:
+			cout<<"JUNE "<<day<<" "<<year;
+			break;
+		case 7:
+			cout<<"JULY "<<day<<" "<<year;
+			break;
+		case 8:
+			cout<<"AUG "<<day<<" "<<year;
+			break;
+		case 9:
+			cout<<"SEP "<<day<<" "<<year;
+			break;
+		case 10:
+			cout<<"OCT "<<day<<" "<<year;
+			break;
+		case 11:
+			cout<<"NOV "<<day<<" "<<year;
+			break;
+		case 12:
+			cout<<"DEC "<<day<<" "<<year;
+			break;
+		default:
+			cout<<"Invalid Entry in Month";
+			
+	    }
+		
+	}
+	else
+		cout<<"Invalid Entry in Date"; 
+
+	
+	return 0;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int a,e,i,o,u,A,E,I,O,U;
+	char x;
+	cout<<"Enter a single character : ";
+	cin>>x;
+	if(x=='a' || x=='A')
+	cout<<"Entered character is a vowel";
+	else if(x=='e' || x=='E')
+	cout<<"Entered character is a vowel";
+	else if(x=='i' || x=='I')
+	cout<<"Entered character is a vowel";
+	else if(x=='o' || x=='O')
+	cout<<"Entered character is a vowel";
+	else if(x=='u' || x=='U')
+	cout<<"Entered character is a vowel";
+	else
+	cout<<"Entered character is a consonent";
+	
+	return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int a,e,i,o,u,A,E,I,O,U;
+	char x;
+	cout<<"Enter a single character : ";
+	cin>>x;
+	switch(x)
+	{
+		case 'a':
+			cout<<"Entered character is a vowel";
+			break;
+		case 'b':
+			cout<<"Entered character is a vowel";
+			break;
+		case 'c':
+			cout<<"Entered character is a vowel";
+			break;
+		case 'd':
+			cout<<"Entered character is a vowel";
+			break;
+		case 'e':
+			cout<<"Entered character is a vowel";
+			break;
+		case 'A':
+			cout<<"Entered character is a vowel";
+			break;
+		case 'E':
+			cout<<"Entered character is a vowel";
+			break;
+		case 'I':
+			cout<<"Entered character is a vowel";
+			break;
+		case 'O':
+			cout<<"Entered character is a vowel";
+			break;
+		case 'U':
+			cout<<"Entered character is a vowel";
+			break;
+		default:
+			cout<<"Entered character is a consonent";
+		   
+	}
+	
+	return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int a;
+	cout<<"Enter a number : ";
+	cin>>a;
+	(a%2==0?cout<<"Entered number is even":cout<<"Entered number is odd");
+	
+
+
+	
+	return 0;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int a,b,c;
+	cout<<"Enter a number : ";
+	cin>>a;
+	cout<<"Press 1 to start the checking ";
+	cin>>b;
+	switch(b)
+	{
+		case 1:
+			if(a%2==0)
+			{
+				cout<<endl<<"Entered number is even ";
+		    }
+		    else 
+		    cout<<endl<<"Entered number is odd";
+		default:
+			cout<<" ";
+	}
+	
+
+
+	
+	return 0;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int a,b,c;
+	cout<<"Enter the 1st number : ";
+	cin>>a;
+	cout<<"Enter the 2nd number : ";
+	cin>>b;
+	cout<<"Enter the 3rd number : ";
+	cin>>c;
+	cout<<endl;
+	
+	(a>b?(a>c?cout<<"1st number is greatest":cout<<""):cout<<"");
+	(b>a?(b>c?cout<<"2nd number is greatest":cout<<""):cout<<"");
+	(c>a?(c>b?cout<<"3rd number is greatest":cout<<""):cout<<"");
+	
+	return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() 
+{
+	int a,b,c;
+	cout<<"Available Degrees are : BS(CS),BS(SE),BS(EE),BBA "<<endl;
+	cout<<endl<<"Press 1 for Bachlors in Computer Sciences"<<endl;
+	cout<<"Press 2 for Bachlors in Software Engineering"<<endl;
+	cout<<"Press 3 for Bachlors in Electrical Engineering"<<endl;
+	cout<<"Press 4 for Bachlors in Business and Administration"<<endl;
+	cout<<endl<<"Option Chosen = ";
+	cin>>a;
+	cout<<endl<<setw(60)<<setfill('*')<<" "<<endl;
+	switch(a)
+	{
+		case 1:
+				cout<<"Press 1 for Computer Sciences Courses"<<endl;
+	            cout<<"Press 2 for Mathematical Courses"<<endl;
+	            cout<<"Press 3 for Side cources(non-imp)"<<endl;
+	            cout<<endl<<"Option Chosen = ";
+	            cin>> b;
+	            cout<<endl<<setw(60)<<setfill('*')<<" "<<endl;
+	            switch(b)
+	            {
+	            	case 1:
+	            	    cout<<"Programming Fundamentals"<<endl;
+	                    cout<<"Object Oriental Language"<<endl;
+	                    cout<<"Data Structure"<<endl;
+	                    cout<<"Arificial Intelligence"<<endl;
+	                    break;
+	                
+	                case 2:
+	                	cout<<"Linear Algebra"<<endl;
+	                    cout<<"Calclus 1/2"<<endl;
+	                    cout<<"Analytical Geomatry"<<endl;
+	                    cout<<"Probability and Combinations"<<endl;
+	                    break;
+	                    
+	                case 3:
+	                	cout<<"Pakistan Studies"<<endl;
+	                	cout<<"Islamiyat / Ethics"<<endl;
+	                    cout<<"Applied Physics"<<endl;
+	                    cout<<"Information to Comm. Technologies"<<endl;
+	                    cout<<"English Grammer and Composition"<<endl;
+	                    break;
+	                default:
+	                	cout<<"Invalid Entry"<<endl;
+	                   	
+				}
+				break;
+				
+		
+		case 2:
+			    cout<<"Press 1 for Software Engineering Courses"<<endl;
+	            cout<<"Press 2 for Mathematical Courses"<<endl;
+	            cout<<"Press 3 for Side cources(non-imp)"<<endl;
+	            cout<<endl<<"Option Chosen = ";
+	            cin>>b;
+	            cout<<endl<<setw(60)<<setfill('*')<<" "<<endl;
+	            switch(b)
+	            {
+	            	case 1:
+	            	    cout<<"Programming Fundamentals"<<endl;
+	                    cout<<"Object Oriental Language"<<endl;
+	                    cout<<"Data Base Managment System"<<endl;
+	                    cout<<"Object Oriented Analysis & Statistics"<<endl;
+	                    break;
+	                
+	                case 2:
+	                	cout<<"Linear Algebra"<<endl;
+	                    cout<<"Calclus 1/2"<<endl;
+	                    cout<<"Analytical Geomatry"<<endl;
+	                    cout<<"Probability and Combinations"<<endl;
+	                    break;
+	                    
+	                case 3:
+	                	cout<<"Pakistan Studies"<<endl;
+	                	cout<<"Islamiyat / Ethics"<<endl;
+	                    cout<<"Applied Physics"<<endl;
+	                    cout<<"Information to Comm. Technologies"<<endl;
+	                    cout<<"English Grammer and Composition"<<endl;
+	                    break;
+	                default:
+	                	cout<<"Invalid Entry"<<endl;
+	            }
+	            break;
+		
+		case 3:
+		    	cout<<"Press 1 for Electrical Engineering Courses"<<endl;
+	            cout<<"Press 2 for Mathematical Courses"<<endl;
+	            cout<<"Press 3 for Side cources(non-imp)"<<endl;
+	            cout<<endl<<"Option Chosen = ";
+	            cin>> b;
+	            cout<<endl<<setw(60)<<setfill('*')<<" "<<endl;
+	            switch(b)
+	            {
+	            	case 1:
+	            	    cout<<"Programming Fundamentals"<<endl;
+	            	    cout<<"Engineering Drawing"<<endl;
+	            	    cout<<"Electronic Devices and Circuits"<<endl;
+	            	    cout<<"Signals and Systems"<<endl;
+	                    break;
+	                
+	                case 2:
+	                	cout<<"Linear Algebra"<<endl;
+	                    cout<<"Applied Calculas"<<endl;
+	                    cout<<"Multi-Variable Calculas"<<endl;
+	                    cout<<"Complex Variables and Transforms"<<endl;
+	                    break;
+	                    
+	                case 3:
+	                	cout<<"Pakistan Studies"<<endl;
+	                    cout<<"Applied Physics"<<endl;
+	                    cout<<"Islamiyat / Ethics"<<endl;
+	                    cout<<"Physics for Engineers"<<endl;
+	                    cout<<"English Grammer and Composition"<<endl;
+	                    break;
+	                default:
+	                	cout<<"Invalid Entry"<<endl;
+	            }
+	            break;
+		
+		case 4:
+		    	cout<<"Press 1 for Computer Sciences Courses"<<endl;
+	            cout<<"Press 2 for Mathematical Courses"<<endl;
+	            cout<<"Press 3 for Side cources(non-imp)"<<endl;
+	            cout<<endl<<"Option Chosen = ";
+	            cin>> b;
+	            cout<<endl<<setw(60)<<setfill('*')<<" "<<endl;
+	            switch(b)
+	            {
+	            	case 1:
+	            	    cout<<"IT in Business"<<endl;
+	                    cout<<"Financial Accounting"<<endl;
+	                    cout<<"Marketing Management"<<endl;
+	                    cout<<"Organiziational Behaviour"<<endl;
+	                    break;
+	                
+	                case 2:
+	                	cout<<"Statistical Inference"<<endl;
+	                    cout<<"Business Finance"<<endl;
+	                    cout<<"Business Law"<<endl;
+	                    cout<<"Economy of Pakistan"<<endl;
+	                    break;
+	                    
+	                case 3:
+	                	cout<<"Pakistan Studies"<<endl;
+	                	cout<<"Islamiyat / Ethics"<<endl;
+	                    cout<<"Communication"<<endl;
+	                    cout<<"Business Elective"<<endl;
+	                    cout<<"English Grammer and Composition"<<endl;
+	                    break;
+	                default:
+	                	cout<<"Invalid Entry,Try again"<<endl;
+	            }
+	            break;
+			
+	}
+	
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	char a;
+	cout<<"Enter a letter : ";
+	cin>>a;
+	if(a>='a'&& a<='z' || a>='A'&&a<='Z')
+	{
+		while(1)
+		{
+			if(a>='a'&&a<='z')
+			{
+				cout<<"Entered Letter is a lower case alphabet : "<<a<<endl;
+				break;
+			}
+			
+			if(a>='A'&&a<='Z')
+			{
+				cout<<"Entered Letter is a uper case alphabet : "<<a<<endl;
+				break;
+			}
+			
+		}
+	}
+	else if(a>='0'&&a<='9')
+	cout<<"Entered Letter is a digit : "<<a<<endl;
+	else 
+	cout<<"Entered Letter is a Special Case Character : "<<a<<endl;
+	
+	return 0;
+}
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	float m,tm,pa;
+	cout<<"Enter the obtained marks of the student : ";
+	cin>>m;
+	cout<<endl<<"Enter the total marks of the cource : ";
+	cin>>tm;
+	pa=m/tm*100;
+	
+	if(pa>=90 && pa<=100)
+	cout<<endl<<"A grade is alloted to the student "<<endl<<"Achieved Percentage = "<<pa<<endl<<"Achieved GPA = 4.0";
+	else if(pa>=80 && pa<90)
+	cout<<endl<<"B grade is alloted to the student "<<endl<<"Achieved Percentage = "<<pa<<endl<<"Achieved GPA = 3.0";
+	else if(pa>=70 && pa<80)
+	cout<<endl<<"C grade is alloted to the student "<<endl<<"Achieved Percentage = "<<pa<<endl<<"Achieved GPA = 2.0";
+	else if(pa>=60 && pa<70)
+	cout<<endl<<"D grade is alloted to the student "<<endl<<"Achieved Percentage = "<<pa<<endl<<"Achieved GPA = 1.0";
+	else if(pa<60)
+	cout<<endl<<"F grade is alloted to the student "<<endl<<"Achieved Percentage = "<<pa<<endl<<"Achieved GPA = 0.0";
+	else
+	cout<<endl<<"Invalid Entries, please try again";
+	
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+	int a=1,b=1,c=1,i=1;
+	cout<<"Enter the number of rows : ";
+	cin>>a;
+	for(i=1;i<=a;i++)
+	{
+		for(b=1;b<=i;b++)
+		{
+			if(i!=a)
+			{
+				if(b==1 || b==i)
+				cout<<""<<'@'<<" ";
+				else 
+				cout<<"  ";
+			}
+		if(i==a)
+		cout<<'@'<<" ";
+		}
+	cout<<endl;
+	}
+	
+	return 0;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+	int a,b,c,i;
+	cout<<"Enter the number of rows : ";
+	cin>>a;
+	for(i=1;i<=a;i++)
+	{
+		for(b=1;b<=a-i;b++)
+		cout<<" ";
+		
+		for(c=i;c>=1;c--)
+		cout<<c;
+		
+		cout<<endl;
+	}
+	
+	return 0;
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+	int a,b,i;
+	cout<<"Enter the number of rows : ";
+	cin>>a;
+	for(i=a;i<=a && i>=1;i--)
+	{
+		for(b=a;b<=a && b>=1;b--)
+		{
+			if(b==1 || b==i || i==a)
+			cout<<b<<"  ";
+			else
+			cout<<"   ";
+		}
+	cout<<endl;
+	}
+	
+	return 0;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+	int a,b,i;
+	cout<<"Enter the number of rows : ";
+	cin>>a;
+	for(i=1;i<=a;i++)
+	{
+		for(b=1;b<=a;b++)
+		{
+			if(i==1 || i==a)
+			cout<<"  "<<'@';
+			else if(b==1 || b==a)
+			cout<<"  "<<'@';
+			else
+			cout<<"   ";
+		}
+	cout<<endl;
+	}
+	
+	return 0;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+	int a,b,c,d,i;
+	cout<<"Enter the number of rows : ";
+	cin>>a;
+	for(i=1;i<=a;i++)
+	{
+		for(b=i;b<=a;b++)
+		cout<<"   ";
+		
+		for(c=i;c>0 && c<=a;c--)
+		cout<<c<<"  ";
+		
+		for(d=2;d<=i;d++)
+		cout<<d<<"  ";
+		
+		cout<<endl;
+	}
+	
+	return 0;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+	int a,b,i;
+	cout<<"Enter the number of rows : ";
+	cin>>a;
+	for(i=1;i<=a;i++)
+	{
+		for(b=i;b<=a;b++)
+		cout<<"*";
+		
+		for(b=1;b<=(2*i)-2;b++)
+		cout<<" ";
+		
+		for(b=i;b<=a;b++)
+		cout<<'*';
+		
+		cout<<endl;
+	}
+	
+	for(i=2;i<=a;i++)
+	{
+		for(b=1;b<=i;b++)
+		cout<<"*";
+		
+		for(b=(2*i)-2;b<(2*a)-2;b++)
+		cout<<" ";
+		
+		for(b=1;b<=i;b++)
+		cout<<'*';
+		
+		cout<<endl;
+	}
+	
+	
+	return 0;
+}
+
+
+
+
+pascel
+
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+	int a,b,c,d=1,i;
+	cout<<"Enter the number of rows : ";
+	cin>>a;
+	for(i=0;i<a;i++)
+	{
+		for(c=1;c<=a-i;c++)
+		cout<<" ";
+		for(b=0;b<=i;b++)
+		{
+			if(b==0 || i==0)
+			d=1;
+			else
+			d=d*(i-b+1)/b;
+			cout<<d<<" ";
+		}
+	cout<<endl;
+	}
+	
+
+	
+	return 0;
+}

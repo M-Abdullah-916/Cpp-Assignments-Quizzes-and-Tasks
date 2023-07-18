@@ -1,0 +1,75 @@
+#include <iostream>
+#include<fstream>
+#include<string>
+
+using namespace std;
+void mazeTraverse(char array[12][12]);
+int main()
+{
+	int c1 = 0, c2 = 0;
+	char a;
+	char array[12][12] = { 0 };
+	ifstream fin;
+	fin.open("game.txt", ios::in);
+	if (!fin.is_open())
+	{
+		cout << "Error while opening the file" << endl;
+	}
+	else
+		while (!fin.eof())
+		{
+			fin >> a;
+			array[c1][c2] = a;
+			c2++;
+			if (c2 == 12)
+			{
+				c2 = 0;
+				c1++;
+			}
+			if (c1 == 12 && c2 == 12)
+				break;
+		}
+	cout << "Before filling the dots : " << endl<<endl;
+	for (int i = 0; i < 12; i++)
+	{
+		for (int j = 0; j < 12; j++)
+		{
+			cout << array[i][j] << " ";
+		}
+		cout << endl;
+	}
+
+	mazeTraverse(array);
+
+	cout << endl<<"After filling the dots : " << endl<<endl;
+	for (int i = 0; i < 12; i++)
+	{
+		for (int j = 0; j < 12; j++)
+		{
+			cout << array[i][j] << " ";
+		}
+		cout << endl;
+	}
+	fin.close();
+
+	cout << endl << endl;
+	system("pause");
+	return 0;
+}
+
+void mazeTraverse(char array[12][12])
+{
+	int a;
+	for (int i = 0; i < 12; i++)
+	{
+		for (int j = 0; j < 12; j++)
+
+		{
+			if (array[i][j] == '.')
+			{
+				array[i][j] = 'X';
+			}
+		}
+	}
+	
+}

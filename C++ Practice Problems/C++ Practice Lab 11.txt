@@ -1,0 +1,341 @@
+#include <iostream>
+using namespace std;
+
+
+int main(int argc, char** argv) {
+	int i,x;
+	cout<<"Enter the 1st number ="<<endl;
+	cin>>i;
+	cout<<"Enter the 2nd number ="<<endl;
+	cin>>x;
+	(i>x?cout<<"1st number is greater":cout<<"2nd number is greater");
+	
+	
+	
+	return 0;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+	int i;
+	for(i=1;i<=100;i++)
+	{
+		cout<<i<<endl;
+	}
+	
+	return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+	int i;
+	for(i=100;i>=1;i--)
+	{
+		cout<<i<<endl;
+	}
+
+	return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+	int i,a;
+	cout<<"Enter a number = ";
+	cin>>a;
+	for(i=0;i<=a;i++)
+	{
+		cout<<i<<endl;
+	}
+	
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+	int i;
+	for(i=50;i>=0;i--)
+	{
+		cout<<i<<endl;
+	}
+
+	return 0;
+
+	
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+	int i;
+	for(i=0;i<=50;i++)
+	{
+		if (i%2==0)
+		cout<<"Number is even = "<<i<<endl;
+		else
+		cout<<"Number is odd = "<<i<<endl;
+	}
+
+
+
+	
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+	int i,x;
+	for(i=1;i<=25;i++)
+	{
+		x=x+i;
+	}
+	cout<<x;
+
+
+	
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+	int i,x;
+	for(i=1;i<=25;i++)
+	{
+		x=x+i;
+	}
+	cout<<"AVG ="<<x/25<<endl;
+
+
+	
+}
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(int argc, char** argv) {
+	int i,b,p,num=1;
+	cout<<"Enter value of base =";
+	cin>>b;
+	cout<<"Enter value of power =";
+	cin>>p;
+	for (i=1;i<=p;i++)
+	{
+		num=b*num;
+	}
+	cout<<"Result ="<<num;
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(int argc, char** argv) {
+	int x,i;
+	cout<<"Enter a number = ";
+	cin>>x;
+	for (i=1;i<=10;i++)
+	{
+		cout<<x<<" "<<"x "<<i<<" = "<<x*i<<endl;
+	}
+}
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+	int i,x,y;
+	for(i=1;i<=10;i++)
+	{
+		cout<<"Input marks "<<endl;
+		cin>>x;
+		y=y+x;
+	}
+	cout<<y/10<<endl;
+
+	
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) 
+{
+	int a,b,x;
+	cout<<"Enter the First Number = ";
+	cin>>a;
+	cout<<"Enter the Second Number = ";
+	cin>>b;
+	cout<<"............................................."<<endl;
+	cout<<"Enter the Operator "<<endl;
+	cout<<"............................................."<<endl;
+	cout<<"Press 1 to Add the given numbers"<<endl;
+	cout<<"Press 2 to Subtract the given numbers"<<endl;
+	cout<<"Press 3 to Multiply the given numbers"<<endl;
+	cout<<"Press 4 to Divide the given numbers"<<endl;
+	cout<<"Press 5 to take Modulus of given numbers"<<endl;
+	cout<<"............................................."<<endl;
+	cout<<"Entered Operator = ";
+	cin>>x;
+	cout<<"............................................."<<endl;
+	switch(x)
+	{
+		case 1:
+			int sum;
+			sum=a+b;
+			cout<<"Addition of the given number is = "<<sum<<endl;
+			break;
+		case 2:
+			int sub;
+			sub=a-b;
+			cout<<"Subtraction of the given number is ="<<sub<<endl;
+			break;
+		case 3:
+			int mul;
+			mul=a*b;
+			cout<<"Multiplication of the given number is = "<<mul<<endl;
+			break;
+		case 4:
+			int div;
+			div=a/b;
+			cout<<"Division of the given number is = "<<div<<endl;
+			break;
+		case 5:
+			int mod;
+			mod=a%b;
+			cout<<"Modulus of the given number is = "<<mod<<endl;
+			break;
+		default:
+			cout<<"Invalid Entry"<<endl;
+	}
+	
+	
+	return 0;
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(int argc, char** argv) {
+	int i,p;
+	cout<<"Enter a number = ";
+	cin>>p;
+	for(i=2;i<p;i++)
+	{
+		if (p%i==0)
+		{
+     		cout<<"It is not a prime number"<<endl;
+	      	break;
+		}	
+	}
+	if(p==i)
+	cout<<"It is a prime number  "<<endl;
+
+		
+return 0;
+	
+
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(int argc, char** argv) {
+	int n;
+	cout<<"Enter a number = ";
+	cin>>n;
+	if(n%2==0)
+	cout<<"It is an Even Number";
+	if(n%2!=0)
+	cout<<"It is an Odd Number";
+
+}
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+	int i,n;
+	int f=1;
+	
+	cout<<"Enter the number whose factorial is to be tken out = ";
+	cin>>n;
+	for(i=1;i<=n;i++)
+	{
+		f=f*i;
+	}
+	cout<<"Factorial = "<<f<<endl;
+
+}
+
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+	char n;
+	cout<<"Enter a number for ASCII code = ";
+	cin>>n;
+	cout<<"ASCII of "<< n   <<" is "<<int(n);
+	
+
+}
+
+
+

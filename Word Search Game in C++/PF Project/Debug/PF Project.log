@@ -1,0 +1,7 @@
+﻿  Source.cpp
+C:\Users\Ocean Computers\Desktop\PF Project\PF Project\Source.cpp(46): error C4716: 'wordcheck': must return a value
+C:\Users\Ocean Computers\Desktop\PF Project\PF Project\Source.cpp(69): warning C4715: 'checkRow': not all control paths return a value
+C:\Users\Ocean Computers\Desktop\PF Project\PF Project\Source.cpp(92): warning C4715: 'checkColumn': not all control paths return a value
+C:\Users\Ocean Computers\Desktop\PF Project\PF Project\Source.cpp(140): warning C4715: 'checkLeftDiagonal': not all control paths return a value
+C:\Users\Ocean Computers\Desktop\PF Project\PF Project\Source.cpp(178): error C4716: 'checkConfiguration': must return a value
+C:\Users\Ocean Computers\Desktop\PF Project\PF Project\Source.cpp(116): warning C4715: 'checkRightDiagonal': not all control paths return a value
