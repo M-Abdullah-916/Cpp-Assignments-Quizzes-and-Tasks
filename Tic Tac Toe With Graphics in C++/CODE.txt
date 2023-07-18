@@ -1,0 +1,106 @@
+#include<SFML/Graphics.hpp>
+#include<iostream>
+using namespace sf;
+using namespace std;
+
+
+int main()
+{
+	cout << "Left Click for player 1 (TICK)"<<endl;
+	cout << "Right Click for player 2 (CROSS)"<<endl;
+	int a[3][3] = { 0 };
+	int b = 0;
+
+	RenderWindow window(VideoMode(900, 700), "@ PHANTOM @");
+	RectangleShape r[3][3];
+
+	Texture t1, t2, t3, t4;
+	t1.loadFromFile("bg.png");
+	t2.loadFromFile("tic tac toe.png");
+	t3.loadFromFile("tick.png");
+	t4.loadFromFile("cross.png");
+	Sprite s1, s2;
+	s1.setTexture(t1);
+	s1.setScale(1.3f, 1.1f);
+	s2.setTexture(t2);
+	s2.setScale(1.0f, 1.0f);
+	s2.setPosition(250, 190);
+	s2.setColor(Color::Cyan);
+
+	for (int i = 0; i < 3; i++)
+	{
+		for (int j = 0; j < 3; j++)
+		{
+			r[i][j].setSize(Vector2f(100, 100));
+			r[i][j].setFillColor(Color::White);
+			r[i][j].setOutlineColor(Color::Black);
+			r[i][j].setOutlineThickness(9);
+			r[i][j].setPosition(100 * j, 100 * i);
+		}
+	}
+
+	while (window.isOpen())
+	{
+		Event event;
+		while (window.pollEvent(event))
+		{
+			if (event.type == Event::Closed)
+				window.close();
+			if (Mouse::isButtonPressed(Mouse::Left))
+			{
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 3; j++)
+					{
+						if (r[i][j].getGlobalBounds().contains(Mouse::getPosition(window).x, Mouse::getPosition(window).y))
+						{
+								if (a[i][j] != 1)
+									r[i][j].setTexture(&t3);
+							a[i][j] = 1;
+						}
+					}
+				}
+			}
+			if (Mouse::isButtonPressed(Mouse::Right))
+			{
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 3; j++)
+					{
+						if (r[i][j].getGlobalBounds().contains(Mouse::getPosition(window).x, Mouse::getPosition(window).y))
+						{
+								if (a[i][j] != 1)
+									r[i][j].setTexture(&t4);
+							a[i][j] = 1;
+						}
+					}
+				}
+			}
+		}
+		window.clear();
+		window.draw(s1);
+		window.draw(s2);
+
+		r[0][0].setPosition(350, 350);
+		window.draw(r[0][0]);
+		r[0][1].setPosition(350, 450);
+		window.draw(r[0][1]);
+		r[0][2].setPosition(350, 550);
+		window.draw(r[0][2]);
+		r[1][0].setPosition(450, 350);
+		window.draw(r[1][0]);
+		r[1][1].setPosition(450, 450);
+		window.draw(r[1][1]);
+		r[1][2].setPosition(450, 550);
+		window.draw(r[1][2]);
+		r[2][0].setPosition(550, 350);
+		window.draw(r[2][0]);
+		r[2][1].setPosition(550, 450);
+		window.draw(r[2][1]);
+		r[2][2].setPosition(550, 550);
+		window.draw(r[2][2]);
+
+		window.display();
+	}
+}
+

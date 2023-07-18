@@ -1,0 +1,17 @@
+﻿  Source.cpp
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(236): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(244): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(260): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(268): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(285): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(286): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(293): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(294): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(309): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(310): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(317): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(318): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(420): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\hp\desktop\se(a)-19f-0916_pf-sfml\project1\project1\source.cpp(422): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Project1.vcxproj -> C:\Users\Hp\Desktop\SE(A)-19F-0916_PF-SFML\Project1\Debug\Project1.exe
+  Project1.vcxproj -> C:\Users\Hp\Desktop\SE(A)-19F-0916_PF-SFML\Project1\Debug\Project1.pdb (Partial PDB)
